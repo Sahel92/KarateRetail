@@ -48,6 +48,15 @@ public class DataGenerator {
 		return data.address().zipCode();
 	}
 	
+	public static String getCardNumber() {
+		Faker data = new Faker();
+		return data.numerify("4213############");
+	}
+	
+	public static String getCCV() {
+		Faker data = new Faker();
+		return data.numerify("###");
+	}
 	
 	
 }
