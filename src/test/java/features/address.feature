@@ -1,4 +1,4 @@
-@Address
+@completeTest
 Feature: TEK Retail Address API Test
 
 Background:

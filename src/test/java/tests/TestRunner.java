@@ -7,7 +7,7 @@ public class TestRunner {
 	
 	@Karate.Test
 	public Karate runTest() {
-		return  Karate.run("classpath:features").tags("@Address").outputCucumberJson(true);		
+		return  Karate.run("classpath:features").tags("@completeTest").outputCucumberJson(true);		
 	}
 	
 	
