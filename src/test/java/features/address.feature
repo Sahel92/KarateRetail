@@ -30,19 +30,8 @@ Scenario: Post Address Tek Retail API
 * def city = dataGenerator.getCity()
 * def state = dataGenerator.getState()
 * def zipCode = dataGenerator.getZipCode()
-* request 
-""" 
-{
-  "country": "#(country)",
-  "fullName": "#(fullName)",
-  "phoneNumber": "#(phoneNumber)",
-  "street": "#(street)",
-  "apartment": "#(apartment)",
-  "city": "#(city)",
-  "state": "#(state)",
-  "zipCode": "#(zipCode)"
-}
-"""
+* def requestBody = read('request.json')
+* request requestBody
 * method post 
 * status 200
 * print response
@@ -73,19 +62,8 @@ Scenario: Update Address TEK Retail API
 * def city = dataGenerator.getCity()
 * def state = dataGenerator.getState()
 * def zipCode = dataGenerator.getZipCode()
-* request 
-""" 
-{
-  "country": "#(country)",
-  "fullName": "#(fullName)",
-  "phoneNumber": "#(phoneNumber)",
-  "street": "#(street)",
-  "apartment": "#(apartment)",
-  "city": "#(city)",
-  "state": "#(state)",
-  "zipCode": "#(zipCode)"
-}
-"""
+* def requestBody = read('request.json')
+* request requestBody
 * method put
 * status 200
 * print response 
